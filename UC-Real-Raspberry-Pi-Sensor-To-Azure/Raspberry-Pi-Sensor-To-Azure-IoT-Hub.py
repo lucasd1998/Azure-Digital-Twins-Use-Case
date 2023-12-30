@@ -1,13 +1,13 @@
 import board
-import adafruit_dht 
+import adafruit_dht # if not installed --> pip install adafruit-circuitpython-dht
 
 import time
 from datetime import datetime
-from azure.iot.device import IoTHubDeviceClient, Message
+from azure.iot.device import IoTHubDeviceClient, Message # if not installed --> pip install azure-iot-device
 from random import uniform
 
 # Define Connection String for Azure IoT Hub Device
-connection_string_device_azure_iot_hub = "HostName=iot-hub-azure-digital-twins-doerr.azure-devices.net;DeviceId=RaspberryPiHumiture;SharedAccessKey=86kRG6dqd3auHgpYyAIjuxNnp0S3bATYCAIoTDMy4kw="
+connection_string_device_azure_iot_hub = "<your-connection-string>"
 
 # Set GPIO-Pin for DHT11-Sensor
 dht_pin = board.D17
